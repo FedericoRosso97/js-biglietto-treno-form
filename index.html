@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ciao!</h1>
-    <div>
-        <label for="user-name">Quanti anni hai? </label>
-        <input type="text" name="user-age" id="user-age">
-    </div>
-    <div>
-        <label for="user-name">Quanti km vuoi percorrere: </label>
-        <input type="text" name="distance" id="distance">
+    <div class="dati">
+        <h1>Benvenuto!</h1>
+        <h2>Inserisci i tuoi dati per acquistare il biglietto:</h2>
+        <div class="dato">
+            <label for="user-name" class="label">Quanti anni hai?:</label>
+            <input type="text" name="user-age" id="user-age">
+        </div>
+        <div class="dato">
+            <label for="user-name" class="label">Quanti km vuoi percorrere: </label>
+            <input type="text" name="distance" id="distance">
+        </div>
+       
+        <button id="bottone">Calcola prezzo!</button>
     </div>
    
-    <button id="bottone">Calcola prezzo!</button>
    
     <div class="invisible recapi">
         <p class="età">La tua età è:</p>

@@ -13,6 +13,21 @@
     display: flex;
 }
 
+.dati,.dato,.recapi{
+    padding:1rem;
+    margin: 1rem 0;
+}
+
+.dato{
+    border:1px red solid;
+    padding: 1rem;
+}
+
+.label{
+    display: inline-block;
+    width: 200px;
+}
+
 .biglietto{
     width: 60%;
     margin: 0 auto;
