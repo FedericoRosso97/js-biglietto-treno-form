@@ -13,17 +13,21 @@ const recap=document.querySelector('div.recapi');
     console.log(distance);
     
     if(age<18){
-        let sconto=(19.4/100)*distance;
+        let sconto=(19.4/100)*(distance*0.233);
         prezzo=(distance*0.233)-sconto;
       }else if(age>65){
-        let sconto=(37.7/100)*distance;
+        let sconto=(37.7/100)*(distance*0.233);
         prezzo=(distance*0.233)-sconto;
       }
+      
       console.log(prezzo);
+      
       let prezzoArrotondato=prezzo.toFixed(2)
+      
       recap.classList.add('visible');
       recap.classList.remove('invisible');
-
+     
+      /*recap*/ 
       const Eta=document.querySelector('p.età')
       Eta.innerHTML +=age+' '+'anni!';
 
@@ -33,6 +37,7 @@ const recap=document.querySelector('div.recapi');
       const soldi=document.querySelector('p.price')
       soldi.innerHTML +=prezzoArrotondato+' '+'euro!';
 
+      /*biglietto*/ 
       const eta=document.querySelector('p.eta')
       eta.innerHTML +=age+' '+'anni!';
 
