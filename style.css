@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+
+.biglietto{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding:1rem;
+    background-color: lightseagreen;
+}
