@@ -9,6 +9,9 @@ const recap=document.querySelector('div.recapi');
     let age=inputAge.value;
     let prezzo=distance * 0.233;
 
+    recap.classList.add('visible');
+    recap.classList.remove('invisible');
+
     console.log(age);
     console.log(distance);
     
@@ -18,14 +21,17 @@ const recap=document.querySelector('div.recapi');
       }else if(age>65){
         let sconto=(37.7/100)*(distance*0.233);
         prezzo=(distance*0.233)-sconto;
+      }else if(isNaN(prezzo)){
+        alert("Hello! I am an alert box!!");
+        recap.classList.add('invisible');
+        recap.classList.remove('visible');
       }
       
       console.log(prezzo);
       
       let prezzoArrotondato=prezzo.toFixed(2)
       
-      recap.classList.add('visible');
-      recap.classList.remove('invisible');
+      
      
       /*recap*/ 
       const Eta=document.querySelector('p.età')
