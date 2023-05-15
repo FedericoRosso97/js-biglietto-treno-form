@@ -11,10 +11,10 @@ const button=document.getElementById('bottone');
     
     if(age<18){
         let sconto=(19.4/100)*distance;
-        prezzo=(distance*0.233)-sconto;
+        prezzo=(distance*0.233)-sconto + 'sconto 19%';
       }else if(age>65){
         let sconto=(37.7/100)*distance;
-        prezzo=(distance*0.233)-sconto;
+        prezzo=(distance*0.233)-sconto + 'sconto 37%';
       }
 
   });
