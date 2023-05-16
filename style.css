@@ -20,7 +20,10 @@
 
 .dato{
     border:1px red solid;
+    border-radius: 10px;
     padding: 1rem;
+    color:white;
+    background-color: rgba(255, 0, 0, 0.507);
 }
 
 .label{
@@ -30,8 +33,10 @@
 
 .biglietto{
     width: 60%;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: 1px solid black;
     padding:1rem;
-    background-color: lightseagreen;
+    color:white;
+    background-color: rgb(32, 81, 178);
+    border-radius: 10px;
 }
